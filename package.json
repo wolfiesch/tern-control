@@ -1,0 +1,53 @@
+{
+  "name": "tern-control",
+  "version": "0.1.0",
+  "description": "Typed control and cross-session awareness for coding agents running in Tern: sessions, tabs, blocks, terminal input, daemon events, and live agent-session discovery",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://github.com/wolfiesch/tern-control",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolfiesch/tern-control.git"
+  },
+  "keywords": [
+    "tern",
+    "stencil",
+    "agent-tools",
+    "coding-agent",
+    "terminal",
+    "multiplexer",
+    "agents",
+    "oh-my-pi",
+    "omp",
+    "pi-extension",
+    "pi-coding-agent"
+  ],
+  "files": [
+    "src",
+    "skills",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "omp": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "dependencies": {
+    "@sinclair/typebox": "^0.34.52"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.14",
+    "typescript": "^5.9.2"
+  }
+}
